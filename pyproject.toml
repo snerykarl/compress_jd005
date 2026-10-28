@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snerykarl-compress_jd005"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出模型压缩工程师·KV Cache 复用与前缀共享上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "snerykarl" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://snerykarl.github.io"
+Repository = "https://github.com/snerykarl/compress_jd005"
+Issues = "https://github.com/snerykarl/compress_jd005/issues"
+
+[project.scripts]
+compress_jd005 = "compress_jd005:main"
+
+[tool.setuptools]
+py-modules = ["compress_jd005"]
